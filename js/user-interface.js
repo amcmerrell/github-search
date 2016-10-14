@@ -7,13 +7,13 @@ var displayRepos = function(repoName, repoDescription, repoDate) {
     $('#search-results').append('<p>description: ' + repoDescription[i] + '</p>');
     $('#search-results').append('<p>created: ' + repoDate[i] + '</p>');
   }
-}
+};
 
 var currentUser = new User();
 $(document).ready(function() {
   $("#user-search").submit(function(event) {
     event.preventDefault();
     var username = $("#username").val();
-    currentUser.getRepos(username, displayRepos);
-  })
+    currentUser.setUser(username);
+  });
 });
