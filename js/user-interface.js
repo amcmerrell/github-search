@@ -1,9 +1,9 @@
 var User = require('./../js/user.js').userModule;
 
 var displayUser = function(userObject) {
-  $('#user-result').append('<img class="profile-pic" src="' + userObject.photo + '">');
-  $('#user-result').append('<h3>Name: ' + userObject.name + '</h3>');
-  $('#user-result').append('<p>followers: ' + userObject.followerCount + '</p>');
+  $('#user-image').html('<img class="profile-pic" src="' + userObject.photo + '">');
+  $('#user-name').html('<h3>Name: ' + userObject.name + '</h3>');
+  $('#user-followers').html('<p>followers: ' + userObject.followerCount + '</p>');
 };
 
 var currentUser = new User();
