@@ -1,5 +1,5 @@
 {
-  "name": "GitHub Search",
+  "name": "github-search",
   "description": "Javascript application, utilizing GitHub API to display user information.",
   "main": "index.js",
   "license": "ISC",
