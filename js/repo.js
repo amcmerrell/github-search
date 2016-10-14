@@ -1,12 +1,10 @@
 var apiKey = require('./../.env').apiKey;
 
-Repo = function(name, description, date) {
-  this.name = name;
-  this.description = description;
-  this.date = date;
+Repo = function() {
+// Refactor to use fields instead of array variables in getRepos method.
 };
 
-User.prototype.getRepos = function(username, displayFunction){
+Repo.prototype.getRepos = function(username, displayFunction){
   var repoNames = [];
   var repoDescriptions = [];
   var repoDates = [];
@@ -18,8 +16,20 @@ User.prototype.getRepos = function(username, displayFunction){
     }
     displayFunction(repoNames, repoDescriptions, repoDates);
   }).fail(function(error){
-    $("#search-results").text("User: " + error.responseJSON.message + ". Please check the username and try searching again.");
+    $("#search-results").text("Repo: " + error.responseJSON.message);
   });
 };
+
+// Repo.prototype.setRepo = function(username, index){
+//   var that = this;
+//   $.get('https://api.github.com/users/' + username + '/repos?access_token=' + apiKey).then(function(response){
+//     that.name = response[index].name;
+//     repoDescriptions.push(response[index].description);
+//     repoDates.push(moment(response[index].created_at).format('L'));
+//     // displayFunction(repoNames, repoDescriptions, repoDates);
+//   }).fail(function(error){
+//     $("#search-results").text("User: " + error.responseJSON.message + ". Please check the username and try searching again.");
+//   });
+// };
 
 exports.repoModule = Repo;
