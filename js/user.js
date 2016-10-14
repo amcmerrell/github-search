@@ -4,8 +4,14 @@ User = function() {
 }
 
 User.prototype.getRepos = function(username, displayFunction){
+  var repoNames = [];
+  var repoDescriptions = [];
   $.get('https://api.github.com/users/' + username + '/repos?access_token=' + apiKey).then(function(response){
-    displayFunction(response[0].name, response[0].description);
+    for (var i = 0; i < response.length; i++) {
+      repoNames.push(response[i].name);
+      repoDescriptions.push(response[i].description);
+    }
+    displayFunction(repoNames, repoDescriptions);
   }).fail(function(error){
     displayFunction(error.responseJSON.message);
   });
