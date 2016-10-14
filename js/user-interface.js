@@ -1,7 +1,8 @@
 var User = require('./../js/user.js').userModule;
 
-var displayRepos = function(searchResults) {
-  $('#search-results').text('First repo name: ' + searchResults);
+var displayRepos = function(repoName, repoDescription) {
+  $('#search-results').append('<h3>Repo name: ' + repoName + '</h3>');
+  $('#search-results').append('<p>description: ' + repoDescription + '</p>');
 }
 
 var currentUser = new User();
