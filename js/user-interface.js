@@ -1,9 +1,9 @@
 var User = require('./../js/user.js').userModule;
 
 var displayUser = function(userObject) {
-  $('#search-results').append('<img src="' + userObject.photo + '">');
-  $('#search-results').append('<h3>Repo name: ' + userObject.name + '</h3>');
-  $('#search-results').append('<p>followers: ' + userObject.followerCount + '</p>');
+  $('#user-result').append('<img class="profile-pic" src="' + userObject.photo + '">');
+  $('#user-result').append('<h3>Name: ' + userObject.name + '</h3>');
+  $('#user-result').append('<p>followers: ' + userObject.followerCount + '</p>');
 };
 
 var currentUser = new User();
@@ -12,5 +12,6 @@ $(document).ready(function() {
     event.preventDefault();
     var username = $("#username").val();
     currentUser.setUser(username, displayUser);
+    $(".hidden").removeClass("hidden");
   });
 });
