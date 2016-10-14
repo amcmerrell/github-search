@@ -12,7 +12,7 @@ _JavaScript application, using GitHub API to display data based on user input._
 
 | Behavior         | Input         | Output         |
 |------------------|---------------|----------------|
-| Visitor performs search function.| "amcmerrell" | List of titles and descriptions for repositories. |
+| Visitor performs search function.| "amcmerrell"  | List of titles and descriptions for repositories. |
 
 ## Setup/Installation Requirements
 
