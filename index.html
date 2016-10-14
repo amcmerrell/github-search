@@ -10,31 +10,33 @@
   </head>
   <body>
     <div class="container">
-      <h2>GitHub User Search</h2>
-      <p><em>Fill out the form below to view GitHub info for a user.</em></p>
-      <div class="row">
-        <div class="col-md-6">
-          <form id="user-search">
-            <div class="form-group">
-              <label for="username">Enter a GitHub username:</label>
-              <input class="form-control" type="text" name="username" id="username">
-            </div>
-            <button class="btn btn-warning"type="submit">Search User</button>
-            <button class="btn btn-primary hidden" type="button" id="find-repos">Show Repos</button>
-          </form>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-6">
-          <div id="user-result">
-            <div id="user-image"></div>
-            <div id="user-name"></div>
-            <div id="user-followers"></div>
+      <div class="well">
+        <h2>GitHub User Search</h2>
+        <p><em>Fill out the form below to view GitHub info for a user.</em></p>
+        <div class="row">
+          <div class="col-md-6">
+            <form id="user-search">
+              <div class="form-group">
+                <label for="username">Enter a GitHub username:</label>
+                <input class="form-control" type="text" name="username" id="username">
+              </div>
+              <button class="btn btn-warning"type="submit">Search User</button>
+              <button class="btn btn-primary hidden" type="button" id="find-repos">Show Repos</button>
+            </form>
           </div>
         </div>
-        <div class="col-md-6">
-          <div id="search-results">
+        <div class="row">
+          <div class="col-md-6">
+            <div id="user-result">
+              <div id="user-image"></div>
+              <div id="user-name"></div>
+              <div id="user-followers"></div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div id="search-results">
 
+            </div>
           </div>
         </div>
       </div>

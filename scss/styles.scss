@@ -1,3 +1,16 @@
+body {
+  background: url(../../img/bg-image.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.well {
+  background-color: rgba(255, 255, 255, 0.75);
+  margin-top: 20px;
+}
+
 .profile-pic {
   width: 250px !important;
   height: auto;
