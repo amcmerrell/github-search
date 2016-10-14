@@ -4,7 +4,7 @@ User = function() {
   this.name;
   this.photo;
   this.followerCount;
-  this.repos = [];
+  // this.repos = []; add back if repo class issues are resolved.
 };
 
 User.prototype.setUser = function(username, displayFunction){
