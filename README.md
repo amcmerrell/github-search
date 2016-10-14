@@ -12,7 +12,9 @@ _JavaScript application, using GitHub API to display data based on user input._
 
 | Behavior         | Input         | Output         |
 |------------------|---------------|----------------|
-| Visitor performs search function.| "amcmerrell"  | List of titles and descriptions for repositories. |
+| Visitor performs search user function.| "amcmerrell"  | List of titles and descriptions for repositories. |
+| Visitor inputs user that does not exist | "afsoih"  | User: Not found. |
+| Visitor clicks find repos.   | Click find repos with current user inputted. | Display all repositories for selected user. |
 
 ## Setup/Installation Requirements
 
