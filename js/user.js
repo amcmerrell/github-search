@@ -16,7 +16,7 @@ User.prototype.getRepos = function(username, displayFunction){
     }
     displayFunction(repoNames, repoDescriptions, repoDates);
   }).fail(function(error){
-    displayFunction(error.responseJSON.message);
+    $("#search-results").text("User: " + error.responseJSON.message + ". Please check the username and try searching again.");
   });
 };
 
