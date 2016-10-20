@@ -14,9 +14,9 @@ var displayRepos = function(repoName, repoDescription, repoDate) {
   }
 };
 
-var currentRepo = new Repo();
 $(document).ready(function() {
   $("#find-repos").click(function() {
+    var currentRepo = new Repo();
     var username = $("#username").val();
     currentRepo.getRepos(username, displayRepos);
   });
