@@ -24,6 +24,14 @@ _Open your terminal application and run the commands below._
 
 `git clone https://github.com/amcmerrell/github-search`
 
+#### API Setup
+
+_Request a Personal Access Token from GitHub by logging in, going to Settings, and clicking 'Personal access tokens'._
+
+_In your terminal, run `touch .env`, then `atom .env`._
+
+_Add exports.apiKey = "YOUR PERSONAL ACCESS TOKEN"; to the top of the .env file and paste the Personal Access Token you received from GitHub._
+
 #### NPM & Bower Setup
 
 `npm install -1`
